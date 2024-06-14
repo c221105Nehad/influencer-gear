@@ -31,3 +31,23 @@ const collectionChilds = collection.querySelectorAll('div');
 collectionChilds.forEach(collectionChild => {
     collectionChild.classList.add('mb-3');
 });
+
+const socialDiv = document.querySelector('.social-div');
+
+const socialDivChildrens = socialDiv.querySelectorAll('div');
+
+socialDivChildrens.forEach(socialDivChildren => {
+    let iconElement = socialDivChildren.querySelector('i');
+
+    socialDivChildren.addEventListener('mouseenter', function () {
+        gsap.to(iconElement, {
+            y:-3
+        })
+    });
+
+    socialDivChildren.addEventListener('mouseleave', function () {
+        gsap.to(iconElement, {
+            y:0
+        })
+    });
+});
