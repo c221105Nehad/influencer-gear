@@ -1,4 +1,5 @@
 .hero-button:hover .fa-arrow-right,
-.collection-button:hover .fa-arrow-right {
+.collection-button>div:hover .fa-arrow-right,
+.conclusion-button:hover .fa-arrow-right {
     transform: rotate(-45deg);
 }

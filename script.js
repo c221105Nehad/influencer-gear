@@ -23,3 +23,11 @@ gsap.to(document.querySelector('.logos'), {
 }
 
 marqueAnimation();
+
+const collection = document.querySelector('.collection');
+
+const collectionChilds = collection.querySelectorAll('div');
+
+collectionChilds.forEach(collectionChild => {
+    collectionChild.classList.add('mb-3');
+});
