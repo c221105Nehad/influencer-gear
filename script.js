@@ -13,13 +13,13 @@ logosChilds.forEach(logosChild => {
 });
 
 function marqueAnimation() {
-gsap.to(document.querySelector('.logos'), {
-    x: '-100%',
-    duration: 20,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-});
+    gsap.to(document.querySelector('.logos'), {
+        x: '-100%',
+        duration: 20,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
 }
 
 marqueAnimation();
@@ -41,13 +41,13 @@ socialDivChildrens.forEach(socialDivChildren => {
 
     socialDivChildren.addEventListener('mouseenter', function () {
         gsap.to(iconElement, {
-            y:-3
-        })
+            y: -3
+        });
     });
 
     socialDivChildren.addEventListener('mouseleave', function () {
         gsap.to(iconElement, {
-            y:0
-        })
+            y: 0
+        });
     });
 });
